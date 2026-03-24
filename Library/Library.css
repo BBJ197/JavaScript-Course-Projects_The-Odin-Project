@@ -1,0 +1,145 @@
+:root {
+    --blue-bacground: rgb(31, 169, 255);
+    --gray-bacground: rgba(169, 181, 183, 0.345);
+}
+
+body {
+    background-color: var(--gray-bacground);
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(20, 0.5fr);
+    grid-template-rows: repeat(20, 5vh);
+}
+
+.header {
+    color: white;
+    background-color: var(--blue-bacground);
+    grid-area: 1/4/2/21;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw;
+    align-items: end;
+    min-width: 650px;
+}
+
+.header .leftHeader {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.header form {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.hLogo {
+    color: rgb(255, 196, 0);
+    font-size: 45px;
+    transform: translateY(12px);
+}
+
+.notification {
+    font-size: 26px;
+}
+
+.Search_button {
+    background-color: var(--blue-bacground);
+    color: white;
+    border: none;
+    font-size: 28px;
+}
+
+form input {
+    background-color: var(--gray-bacground);
+    border-radius: 20px;
+    height: 4vh;
+    width: 45vw;
+    border: none;
+}
+
+.leftHeader .name {
+    font-size: 17px;
+    font-weight: 400;
+    transform: translateY(-5px);
+}
+
+.nav {
+    color: white;
+    background-color: var(--blue-bacground);
+    grid-area: 2/4/4/21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav .left .nLogo {
+    color: rgb(255, 196, 0);
+    font-size: 65px;
+}
+
+.greeting .name {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.projects {
+    overflow: auto;
+    padding: 1vh 3%;
+    grid-area: 1/1/21/16;
+}
+
+.cards {
+    overflow: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: repeat(1, minmax(max(100px, 23vh), 1fr));
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-auto-rows: minmax(max(100px, 23vh), 1fr);
+}
+
+.projects .card {
+    background-color: white;
+    padding: 20px;
+    border-left: solid rgb(255, 196, 0) 7px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .title {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.card .icons {
+    font-weight: 900;
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    align-self: flex-end;
+}
+
+.card .content {
+    font-size: 15px;
+}
