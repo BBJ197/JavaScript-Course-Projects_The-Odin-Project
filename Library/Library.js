@@ -1,13 +1,18 @@
 const myLibrary = [];
 
-function Book(title, author, pages){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+function Book(newObj){
+    myLibrary.push(newObj);
+    console.log(myLibrary);
 }
 
-function addBookToLibrary() {
-    
+function addBookToLibrary(title1, author1, pages1) {
+    const obj1 = {
+        id: crypto.randomUUID(),
+        title: title1,
+        author: author1,
+        pages: pages1 
+    }
+    Book(obj1);
 }
 
+addBookToLibrary("feker", "shems", 77)
