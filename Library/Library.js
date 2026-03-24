@@ -2,7 +2,6 @@ const myLibrary = [];
 
 function Book(newObj){
     myLibrary.push(newObj);
-    console.log(myLibrary);
 }
 
 function addBookToLibrary(title1, author1, pages1) {
@@ -16,3 +15,5 @@ function addBookToLibrary(title1, author1, pages1) {
 }
 
 addBookToLibrary("feker", "shems", 77)
+addBookToLibrary("bsb", "uwb9", 97)
+console.log(myLibrary);
