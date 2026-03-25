@@ -43,6 +43,7 @@ function addCard() {
 addCard();
 
 const dialog = document.getElementById("new_book")
+
 function show_dialog(){
     dialog.showModal()
 }
@@ -51,4 +52,8 @@ function closedialog(){
 dialog.closest()
 }
 
-dialog.addEventListener("click", ()=>dialog.close())
+dialog.addEventListener("click", (e)=>{
+    if(!dialog.contains(e.target)){
+        dialog.close()
+    }
+})
