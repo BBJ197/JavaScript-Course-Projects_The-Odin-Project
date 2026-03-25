@@ -9,35 +9,9 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(20, 0.5fr);
-    grid-template-rows: repeat(20, 5vh);
-}
-
-.header {
-    color: white;
-    background-color: var(--blue-bacground);
-    grid-area: 1/4/2/21;
     display: flex;
-    justify-content: space-between;
-    padding: 0 4vw;
-    align-items: end;
-    min-width: 650px;
-}
-
-.header .leftHeader {
-    display: flex;
-    gap: 15px;
-    align-items: end;
-}
-
-.header form {
-    display: flex;
-    gap: 5px;
-    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
 }
 
 .hLogo {
@@ -50,21 +24,6 @@ body {
     font-size: 26px;
 }
 
-.Search_button {
-    background-color: var(--blue-bacground);
-    color: white;
-    border: none;
-    font-size: 28px;
-}
-
-form input {
-    background-color: var(--gray-bacground);
-    border-radius: 20px;
-    height: 4vh;
-    width: 45vw;
-    border: none;
-}
-
 .leftHeader .name {
     font-size: 17px;
     font-weight: 400;
@@ -74,14 +33,21 @@ form input {
 .nav {
     color: white;
     background-color: var(--blue-bacground);
-    grid-area: 2/4/4/21;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4vw;
+    padding: 2vh 4vw;
 }
 
-.nav .left {
+
+.nav .nav_right {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    padding: 1vh;
+}
+
+.nav .nav_left {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -104,9 +70,7 @@ h1 {
 
 .projects {
     overflow: auto;
-    padding: 1vh 3%;
-    grid-area: 1/1/21/16;
-}
+    padding: 1vh 3%;}
 
 .cards {
     overflow: auto;
@@ -142,4 +106,29 @@ h1 {
 
 .card .content {
     font-size: 15px;
+}
+
+.btn {
+align-self: center;
+}
+
+.btn #new_btn{
+    background-color: rgb(255, 196, 0);
+    color: var(--blue-bacground);
+    font-weight: 800;
+    height: 5vh;
+    width: 15vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 2vh;
+}
+
+.btn #new_btn:hover{
+    height: 6vh;
+    width: 17vw;
+}
+
+.btn #new_btn:active{
+    height: 5vh;
+    width: 15vw;
 }
