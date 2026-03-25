@@ -14,11 +14,36 @@ function addBookToLibrary(title1, author1, pages1) {
     Book(obj1);
 }
 
-addBookToLibrary("feker", "shems", 77)
-addBookToLibrary("bsb", "uwb9", 97)
+const dialog = document.getElementById("new_book")
+
+function show_dialog(){
+    dialog.showModal()
+}
+
+dialog.addEventListener("click", (e)=>{
+    if (e.target === dialog) {
+        dialog.close();
+    }
+})
+
+let titleForm;
+let authorForm;
+let pagesForm;
+
+document.getElementById("add_form").onclick = function (e) {
+    e.preventDefault(); // 🚨 STOP form from reloading page
+    titleForm = document.getElementById("Ftitle").value;
+    authorForm = document.getElementById("Fautor").value;
+    pagesForm = document.getElementById("Fpage").value;
+    console.log(titleForm , authorForm, pagesForm);
+    addBookToLibrary(titleForm, authorForm, pagesForm)
+    addCard();
+}
+console.log(myLibrary)
 
 function addCard() {
     const container = document.getElementsByClassName("cards")[0];
+    container.innerHTML = "";
     for (let i=0; i<myLibrary.length; i++){
         container.insertAdjacentHTML("beforeend", `
             <div class="card">
@@ -39,17 +64,3 @@ function addCard() {
         `);
     }
 }
-
-addCard();
-
-const dialog = document.getElementById("new_book")
-
-function show_dialog(){
-    dialog.showModal()
-}
-
-dialog.addEventListener("click", (e)=>{
-    if(!dialog.contains(e.target)){
-        dialog.close()
-    }
-})

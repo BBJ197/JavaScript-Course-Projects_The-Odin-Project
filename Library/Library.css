@@ -47,6 +47,11 @@ body {
     padding: 1vh;
 }
 
+.nav_right .name{
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
 .nav .nav_left {
     display: flex;
     align-items: center;
