@@ -41,3 +41,9 @@ function addCard() {
 }
 
 addCard();
+
+
+function show_dialog(){
+    const dialog = document.getElementById("new_book")
+    dialog.showModal()
+}
