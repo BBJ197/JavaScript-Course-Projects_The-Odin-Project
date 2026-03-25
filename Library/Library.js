@@ -23,7 +23,7 @@ function addCard() {
         container.insertAdjacentHTML("beforeend", `
             <div class="card">
                 <div>
-                    <div class="title">${myLibrary[i].title}</div>
+                    <div class="title">${myLibrary[i].title}</div><br>
                     <div class="content">
                     <b>By:</b> ${myLibrary[i].author} <br>
                     <b>Page:</b> ${myLibrary[i].pages}<br>
