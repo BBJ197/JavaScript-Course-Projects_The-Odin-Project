@@ -40,15 +40,24 @@
         <dialog id="new_book">
             <h1>Add New Book</h1>
             <form action="">
-                <label for="Ftitle">Title</label>
-                <input type="text" name="Ftitle" id="Ftitle">
-                <label for="Fautor">Autor</label>
-                <input type="text" name="Fautor" id="Fautor">
-                <label for="Fpage">Page</label>
-                <input type="number" name="Fpage" id="Fpage">
-                <button>ADD</button>
-                <button type="reset">Reset</button>
-                <button onclick=closedialog()>Cancel</button>
+                <div class="wrapper">
+                    <div>
+                    <label for="Ftitle">Title:</label>
+                    <input type="text" name="Ftitle" id="Ftitle">
+                </div>
+                <div>
+                    <label for="Fautor">Autor:</label>
+                    <input type="text" name="Fautor" id="Fautor">
+                </div>
+                <div>
+                    <label for="Fpage">Page:</label>
+                    <input type="number" name="Fpage" id="Fpage">
+                </div>
+                <div class="buttons">
+                    <button>ADD</button>
+                    <button type="reset">Reset</button>
+th                </div>
+                </div>
             </form>
         </dialog>
 </body>

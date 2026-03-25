@@ -132,3 +132,77 @@ align-self: center;
     height: 5vh;
     width: 15vw;
 }
+
+#new_book{
+    text-align: center;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+    color: black;
+    background-color: rgb(236, 248, 253);
+}
+
+::backdrop{
+    background-color: rgba(31, 169, 255, 0.231);
+}
+#new_book h1{
+    font-size: 30px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    height: 30vh;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.wrapper div{
+    display: flex;
+    gap: 15px;
+}
+
+.wrapper input{
+    width: 20vw;
+    height: 30px;
+    background-color: var(--gray-bacground);
+    border-radius: 5px;
+    font-size: 17px;
+    border: solid black 1px;
+}
+
+.wrapper input:hover{
+    width: 21vw;
+    height: 31px;
+}
+
+.wrapper .buttons{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper button {
+    background-color: var(--blue-bacground);
+    color:white ;
+    font-weight: 800;
+    height: 4vh;
+    width: 12vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8vh;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper button:hover{
+    height: 5vh;
+    width: 13vw;
+}
+
+.wrapper button:active{
+    height: 4vh;
+    width: 12vw;
+}

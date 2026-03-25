@@ -48,10 +48,6 @@ function show_dialog(){
     dialog.showModal()
 }
 
-function closedialog(){
-dialog.closest()
-}
-
 dialog.addEventListener("click", (e)=>{
     if(!dialog.contains(e.target)){
         dialog.close()
