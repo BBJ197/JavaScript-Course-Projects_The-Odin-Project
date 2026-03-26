@@ -60,6 +60,7 @@ function addCard() {
                 </div>
                 <div class="icons">
                     <button class="remove_btn" data-id="${myLibrary[i].id}">Remove</button>
+                    <button class="Change_stat" data-id="${myLibrary[i].id}">Change Status</button>
                 </div>
             </div>
         `);

@@ -109,7 +109,8 @@ h1 {
 
 .card .icons {
     display: flex;
-    align-self: flex-end;
+    align-self:center;
+    gap: 10px;
 }
 
 .card .content {
@@ -235,6 +236,29 @@ align-self: center;
 }
 
 .remove_btn:active{
+    height: 4vh;
+    width: 12vw;
+}
+
+
+.Change_stat{
+    background-color: var(--blue-bacground);
+    color:white ;
+    font-weight: 800;
+    height: 4vh;
+    width: 12vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8vh;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Change_stat:hover{
+    height: 5vh;
+    width: 13vw;
+}
+
+.Change_stat:active{
     height: 4vh;
     width: 12vw;
 }
