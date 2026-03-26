@@ -35,11 +35,9 @@ document.getElementById("add_form").onclick = function (e) {
     titleForm = document.getElementById("Ftitle").value;
     authorForm = document.getElementById("Fautor").value;
     pagesForm = document.getElementById("Fpage").value;
-    console.log(titleForm , authorForm, pagesForm);
     addBookToLibrary(titleForm, authorForm, pagesForm)
     addCard();
 }
-console.log(myLibrary)
 
 function addCard() {
     const container = document.getElementsByClassName("cards")[0];
@@ -56,9 +54,11 @@ function addCard() {
                     </div>
                 </div>
                 <div class="icons">
-                    <button id="remove_btn">Remove</button>
+                    <button class="remove_btn" data-id="${myLibrary[i].id}">Remove</button>
                 </div>
             </div>
         `);
     }
 }
+
+

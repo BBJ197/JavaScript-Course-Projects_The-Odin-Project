@@ -217,7 +217,7 @@ align-self: center;
     width: 12vw;
 }
 
-#remove_btn {
+.remove_btn {
     background-color: var(--blue-bacground);
     color:white ;
     font-weight: 800;
@@ -229,12 +229,12 @@ align-self: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-#remove_btn:hover{
+.remove_btn:hover{
     height: 5vh;
     width: 13vw;
 }
 
-#remove_btn:active{
+.remove_btn:active{
     height: 4vh;
     width: 12vw;
 }
