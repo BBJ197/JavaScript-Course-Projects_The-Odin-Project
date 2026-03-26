@@ -55,12 +55,12 @@ function addCard() {
                     <b>By:</b> ${myLibrary[i].author} <br>
                     <b>Page:</b> ${myLibrary[i].pages}<br>
                     <b>Id:</b> ${myLibrary[i].id}<br>     
-                    <b>read this book:</b> ${myLibrary[i].done}
+                    <b>read this book:</b> <span> ${myLibrary[i].done}</span>
                     </div>
                 </div>
                 <div class="icons">
                     <button class="remove_btn" data-id="${myLibrary[i].id}">Remove</button>
-                    <button class="Change_stat" data-id="${myLibrary[i].id}">Change Status</button>
+                    <button class="change_stat" data-id="${myLibrary[i].id}">Change Status</button>
                 </div>
             </div>
         `);
@@ -82,4 +82,16 @@ container.addEventListener("click", function(e) {
     }
 });
 
-console.log(document.getElementById("Fread").value);
+container.addEventListener("click", function(e) {
+    if (e.target.classList.contains("change_stat")) {
+        const id = e.target.dataset.id;
+
+        const book = myLibrary.find(book => book.id === id);
+
+        if (book) {
+            book.done = book.done === "yes" ? "no" : "yes";
+        }
+
+        addCard();
+    }
+});

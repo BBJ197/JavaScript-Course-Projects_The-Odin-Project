@@ -241,7 +241,7 @@ align-self: center;
 }
 
 
-.Change_stat{
+.change_stat{
     background-color: var(--blue-bacground);
     color:white ;
     font-weight: 800;
@@ -253,12 +253,12 @@ align-self: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.Change_stat:hover{
+.change_stat:hover{
     height: 5vh;
     width: 13vw;
 }
 
-.Change_stat:active{
+.change_stat:active{
     height: 4vh;
     width: 12vw;
 }
