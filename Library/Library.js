@@ -4,12 +4,14 @@ function Book(newObj){
     myLibrary.push(newObj);
 }
 
-function addBookToLibrary(title1, author1, pages1) {
+function addBookToLibrary(title1, author1, pages1, done1) {
     const obj1 = {
         id: crypto.randomUUID(),
         title: title1,
         author: author1,
-        pages: pages1 
+        pages: pages1,
+        done: done1  
+
     }
     Book(obj1);
 }
