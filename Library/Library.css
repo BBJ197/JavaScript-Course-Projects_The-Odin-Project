@@ -164,8 +164,8 @@ align-self: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 40vw;
-    height: 30vh;
+    width: 50vw;
+    height: 40vh;
     padding-top: 30px;
     align-items: center;
 }
