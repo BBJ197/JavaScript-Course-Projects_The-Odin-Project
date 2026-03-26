@@ -94,6 +94,12 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    margin: 3px;
+}
+
+.projects .card:hover{
+    background-color: rgb(235, 235, 235);
 }
 
 .card .title {
@@ -126,6 +132,8 @@ align-self: center;
     border: none;
     border-radius: 10px;
     font-size: 2vh;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 .btn #new_btn:hover{
@@ -208,6 +216,28 @@ align-self: center;
 }
 
 .wrapper button:active{
+    height: 4vh;
+    width: 12vw;
+}
+
+#remove_btn {
+    background-color: var(--blue-bacground);
+    color:white ;
+    font-weight: 800;
+    height: 4vh;
+    width: 12vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.8vh;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#remove_btn:hover{
+    height: 5vh;
+    width: 13vw;
+}
+
+#remove_btn:active{
     height: 4vh;
     width: 12vw;
 }
