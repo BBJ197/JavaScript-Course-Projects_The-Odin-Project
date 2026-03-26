@@ -31,13 +31,15 @@ dialog.addEventListener("click", (e)=>{
 let titleForm;
 let authorForm;
 let pagesForm;
+let readForm;
 
 document.getElementById("add_form").onclick = function (e) {
     e.preventDefault(); // 🚨 STOP form from reloading page
     titleForm = document.getElementById("Ftitle").value;
     authorForm = document.getElementById("Fautor").value;
     pagesForm = document.getElementById("Fpage").value;
-    addBookToLibrary(titleForm, authorForm, pagesForm)
+    readForm = document.querySelector('input[name="read"]:checked').value;
+    addBookToLibrary(titleForm, authorForm, pagesForm, readForm)
     addCard();
 }
 
@@ -52,7 +54,8 @@ function addCard() {
                     <div class="content">
                     <b>By:</b> ${myLibrary[i].author} <br>
                     <b>Page:</b> ${myLibrary[i].pages}<br>
-                    <b>Id:</b> ${myLibrary[i].id}         
+                    <b>Id:</b> ${myLibrary[i].id}<br>     
+                    <b>read this book:</b> ${myLibrary[i].done}
                     </div>
                 </div>
                 <div class="icons">
@@ -77,3 +80,5 @@ container.addEventListener("click", function(e) {
         addCard();
     }
 });
+
+console.log(document.getElementById("Fread").value);
