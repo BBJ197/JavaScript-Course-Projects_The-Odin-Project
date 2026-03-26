@@ -61,4 +61,17 @@ function addCard() {
     }
 }
 
+const container = document.getElementsByClassName("cards")[0];
 
+container.addEventListener("click", function(e) {
+    if (e.target.classList.contains("remove_btn")) {
+        const id = e.target.dataset.id;
+
+        const index = myLibrary.findIndex(book => book.id === id);
+        if (index !== -1) {
+            myLibrary.splice(index, 1);
+        }
+
+        addCard();
+    }
+});
