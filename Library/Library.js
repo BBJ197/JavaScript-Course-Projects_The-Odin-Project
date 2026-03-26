@@ -56,9 +56,7 @@ function addCard() {
                     </div>
                 </div>
                 <div class="icons">
-                    <span class="mdi mdi-star-plus-outline"></span>
-                    <span class="mdi mdi-eye-plus-outline"></span>
-                    <span class="mdi mdi-transit-connection-variant"></span>
+                    <button id="remove_btn">Remove</button>
                 </div>
             </div>
         `);
